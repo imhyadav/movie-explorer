@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Movie Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie Explorer</h1>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search movies..." autocomplete="off" />
+      <button id="search-btn">Search</button>
+      <button id="clear-btn" title="Clear Search">&times;</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="loader" class="loader hidden"></div>
+    <div id="movie-list" class="movie-list"></div>
+  </main>
+
+  <!-- Modal for movie details -->
+  <div id="movie-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="modal-close" class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
